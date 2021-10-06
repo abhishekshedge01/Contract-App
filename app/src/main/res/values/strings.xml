@@ -17,4 +17,6 @@
     <string name="ends_on">Ends on</string>
     <string name="_06_08_2001">06/08/2001</string>
     <string name="create">Create</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 </resources>
