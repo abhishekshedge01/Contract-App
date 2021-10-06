@@ -19,4 +19,40 @@
     <string name="create">Create</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+
+
+    <string-array name="vendor_name">
+        <item>Vodafone</item>
+        <item>O2</item>
+        <item>Vattenfall</item>
+        <item>McFit</item>
+        <item>Sky</item>
+    </string-array>
+
+    <string-array name="category_vodafone">
+        <item>Internet</item>
+        <item>DSL</item>
+        <item>Phone</item>
+        <item>Mobile</item>
+        <item>Phone</item>
+    </string-array>
+
+    <string-array name="category_o2">
+        <item>Internet</item>
+        <item>DSL</item>
+    </string-array>
+
+    <string-array name="category_vattenfall">
+        <item>Electricity</item>
+        <item>Gas</item>
+    </string-array>
+
+    <string-array name="category_mcfit">
+        <item>Gym</item>
+    </string-array>
+
+    <string-array name="category_sky">
+        <item>Paid TV</item>
+    </string-array>
+
 </resources>
