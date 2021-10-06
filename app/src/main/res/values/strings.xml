@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ContractApp</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirmation">Password Confirmation</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">already have account?</string>
+    <string name="login">Login</string>
 </resources>

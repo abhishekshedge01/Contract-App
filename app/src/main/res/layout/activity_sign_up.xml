@@ -11,7 +11,6 @@
     tools:context=".SignUp">
 
     <LinearLayout
-
         android:orientation="vertical"
         android:background="#FF9800"
         android:layout_height="wrap_content"
@@ -19,27 +18,27 @@
         >
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="30dp"
             android:textStyle="bold"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="#ffffff"
             android:textSize="40sp" />
 
 
             <TextView
+                android:id="@+id/signup_fullname"
                 android:layout_marginLeft="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full Name"
+                android:text="@string/full_name"
                 android:textSize="15sp"
                 android:textColor="@color/black"
-                >
+                android:layout_marginStart="2dp">
             </TextView>
             <EditText
                 android:layout_width="match_parent"
@@ -51,18 +50,23 @@
                 android:paddingEnd="0dp"
                 android:layout_marginBottom="15dp"
                 android:paddingRight="0dp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
 
 
         <TextView
             android:layout_marginLeft="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/email"
             android:textSize="15sp"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            android:layout_marginStart="2dp">
         </TextView>
             <EditText
+                android:id="@+id/signup_email"
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="15dp"
@@ -71,18 +75,23 @@
                 android:paddingLeft="20dp"
                 android:paddingEnd="0dp"
                 android:paddingRight="0dp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
 
 
         <TextView
             android:layout_marginLeft="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="@string/password"
             android:textSize="15sp"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            android:layout_marginStart="2dp">
         </TextView>
             <EditText
+                android:id="@+id/signup_password"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="15dp"
@@ -91,7 +100,9 @@
                 android:paddingLeft="20dp"
                 android:paddingEnd="0dp"
                 android:paddingRight="0dp"
-                android:textColor="#000000" />
+                android:textColor="#000000"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
 
 
 
@@ -99,12 +110,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
-            android:text="Password Confirmation"
+            android:text="@string/password_confirmation"
             android:textSize="15sp"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            android:layout_marginStart="2dp">
         </TextView>
         <EditText
+            android:id="@+id/signup_confirm_password"
             android:layout_width="match_parent"
+            android:inputType="textPassword"
             android:layout_height="50dp"
             android:background="@drawable/input_boxes"
             android:paddingStart="20dp"
@@ -112,14 +126,17 @@
             android:paddingEnd="0dp"
             android:layout_marginBottom="30dp"
             android:paddingRight="0dp"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
 
         <Button
+            android:id="@+id/signup_signup_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:background="@drawable/button_design"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:textAllCaps="false"
             app:backgroundTint="#11B154" />
 
@@ -134,7 +151,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="already have account?"
+                android:text="@string/already_have_account"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingRight="0dp"
@@ -145,9 +162,10 @@
                 android:paddingStart="5dp" />
 
             <TextView
+                android:id="@+id/signup_login_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="@string/login"
                 android:layout_marginStart="7dp"
                 android:layout_marginLeft="7dp"
                 android:paddingLeft="0dp"
