@@ -1,9 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:layout_height="match_parent"
     tools:context=".ContractDetails">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/new_contract"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vendor"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/contract_details_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/input_boxes"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:paddingEnd="0dp"
+            android:layout_marginBottom="25dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/contract_details_category"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/input_boxes"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:paddingEnd="0dp"
+            android:layout_marginBottom="25dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costs"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/contract_details_costs"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/input_boxes"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:paddingEnd="0dp"
+            android:layout_marginBottom="25dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ends_on"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/contract_details_endson"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/input_boxes"
+            android:paddingStart="11dp"
+            android:paddingLeft="11dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/contract_details_edit_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#15981A"
+            android:text="@string/edit"
+            tools:ignore="ButtonStyle,UnusedAttribute"
+            android:layout_marginEnd="20dp">
+        </Button>
+
+        <Button
+            android:id="@+id/contract_details_delete_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#BC4823"
+            android:text="@string/delete"
+            tools:ignore="ButtonStyle,UnusedAttribute">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
