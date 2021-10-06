@@ -8,4 +8,6 @@
     <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="don_t_have_account">don\'t have account?</string>
+    <string name="my_contracts">My Contracts</string>
+    <string name="add_contract">Add Contract</string>
 </resources>

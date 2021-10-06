@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".ContractList">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/my_contracts"
+        android:layout_marginBottom="20dp"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/contract_list_add_contract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#239f56"
+        android:padding="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/add_contract"
+        tools:ignore="UnusedAttribute">
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contract_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
