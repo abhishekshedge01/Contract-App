@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "600229799382",
+    "project_id": "contractapp-b3c5b",
+    "storage_bucket": "contractapp-b3c5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600229799382:android:89755a07b8c6dfb68b3077",
+        "android_client_info": {
+          "package_name": "com.abhishek.contractapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600229799382-brouidbobjnn0jeb00156n9v6no137sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD72QZV24K0QS0MknwvYBXkoc6TWy-FNPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600229799382-brouidbobjnn0jeb00156n9v6no137sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
