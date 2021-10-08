@@ -32,14 +32,14 @@
         android:textSize="15sp"
         android:textColor="@color/black"
         />
+
+
     <Spinner
         android:id="@+id/create_contract_vendor"
+        android:background="@drawable/grey_box"
         android:layout_width="match_parent"
         android:layout_height="43dp"
-        android:layout_marginBottom="25dp"
-        >
-    </Spinner>
-
+        android:layout_marginBottom="25dp"></Spinner>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,6 +51,7 @@
     <Spinner
         android:id="@+id/create_contract_category"
         android:layout_width="match_parent"
+        android:background="@drawable/grey_box"
         android:layout_height="43dp"
         android:layout_marginBottom="25dp"
         >
@@ -70,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="43dp"
         android:inputType="number"
-        android:background="@drawable/input_boxes"
+        android:background="@drawable/grey_box"
         android:paddingStart="11dp"
         android:paddingLeft="11dp"
         android:paddingEnd="0dp"
@@ -96,6 +97,7 @@
         android:padding="11dp"
         android:layout_height="43dp"
         android:paddingStart="20dp"
+        android:background="@drawable/grey_box"
         android:paddingLeft="20dp"
         android:paddingEnd="0dp"
         android:paddingRight="0dp"

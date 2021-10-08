@@ -7,6 +7,6 @@
     android:layout_height="43dp"
     android:gravity="center_vertical"
     android:textSize="15sp"
-    android:background="@drawable/input_boxes"
+    android:background="@drawable/grey_box"
     android:paddingLeft="20dp"
     tools:ignore="RtlSymmetry" />

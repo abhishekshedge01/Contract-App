@@ -14,7 +14,7 @@
         android:textStyle="bold"
         android:textSize="35sp"
         android:layout_marginBottom="70dp"
-        android:text="@string/new_contract"
+        android:text="@string/contract_details"
         >
     </TextView>
 
