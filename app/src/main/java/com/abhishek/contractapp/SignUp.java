@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
@@ -34,6 +36,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         getSupportActionBar().hide();
+
 
         fullname = findViewById(R.id.signup_fullname);
         email = findViewById(R.id.signup_email);
@@ -82,7 +85,7 @@ public class SignUp extends AppCompatActivity {
         }
 
         if (!checkUser(string_email)) {
-            email.setError("invalid email");
+            email.setError("invalid email format");
             return;
         }
 
