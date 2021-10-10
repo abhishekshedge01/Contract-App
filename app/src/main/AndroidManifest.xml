@@ -10,18 +10,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ContractApp">
-        <activity android:name=".EditContract"></activity>
-        <activity android:name=".ContractDetails" />
-        <activity android:name=".CreateContract" />
-        <activity android:name=".ContractList" />
-        <activity android:name=".Login">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".EditContract" />
+
+        <activity
+            android:name=".ContractDetails"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+
+        <activity
+            android:name=".CreateContract"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <activity android:name=".ContractList" />
+        <activity android:name=".Login"/>
         <activity android:name=".SignUp" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
