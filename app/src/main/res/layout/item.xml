@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="6dp"
+    android:backgroundTint="#D5F4D6"
+    android:layout_margin="13dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5F4D6"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+
+        tools:ignore="RtlSymmetry">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika"
+                android:textColor="#404040"
+                android:text="@string/vendor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingLeft="1dp"
+                android:id="@+id/contract_list_vendor"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/dummy"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textColor="#404040"
+                android:fontFamily="@font/andika"
+                android:text="@string/category"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contract_list_category"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:fontFamily="@font/average_sans"
+                android:text="@string/dummy"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/andika"
+                android:textColor="#404040"
+                android:text="@string/costs"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contract_list_costs"
+                android:layout_width="60dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/average_sans"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:text="@string/dummy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="85dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika"
+                android:text="@string/ends_on"
+                android:textColor="#404040"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contract_list_endson"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/average_sans"
+                android:paddingLeft="1dp"
+                android:text="@string/dummy"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
