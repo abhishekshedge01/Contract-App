@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#FFFFFF"
     android:gravity="center"
@@ -11,22 +12,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="30sp"
         android:layout_marginTop="20sp"
-        android:text="@string/my_contracts"
         android:layout_marginBottom="20dp"
-        >
+        android:text="@string/my_contracts"
+        android:textSize="35sp"
+        android:fontFamily="@font/patrick_hand"
+        android:textColor="#686868"
+        android:textStyle="bold">
     </TextView>
 
     <Button
         android:id="@+id/contract_list_add_contract_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#239f56"
-        android:padding="15dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/add_contract"
+        android:background="@drawable/new_button_design"
+        android:text="Add Contract"
+        android:textSize="12sp"
+        app:backgroundTint="#1BA121"
         tools:ignore="UnusedAttribute">
     </Button>
 
@@ -34,7 +37,6 @@
         android:id="@+id/contract_list_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical">
-    </androidx.recyclerview.widget.RecyclerView>
-
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>
