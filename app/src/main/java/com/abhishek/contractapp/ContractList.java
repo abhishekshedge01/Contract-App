@@ -112,7 +112,11 @@ public class ContractList extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed()
+    {
+        finishAffinity();
+    }
 
 
     @Override
