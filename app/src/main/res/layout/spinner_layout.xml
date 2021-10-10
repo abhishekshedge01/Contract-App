@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="?android:attr/spinnerItemStyle"
@@ -7,6 +8,6 @@
     android:layout_height="43dp"
     android:gravity="center_vertical"
     android:textSize="15sp"
-    android:background="@drawable/grey_box"
+    android:backgroundTint="#E1DFDF"
     android:paddingLeft="20dp"
     tools:ignore="RtlSymmetry" />
