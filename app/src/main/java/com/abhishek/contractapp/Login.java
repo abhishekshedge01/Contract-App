@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,8 +67,19 @@ public class Login extends AppCompatActivity {
             email.setText("Mail not entered");
             return;
         }
+
+        if (!checkUser(str1)) {
+            email.setError("invalid email format");
+            return;
+        }
+
         if (TextUtils.isEmpty(str2)) {
             password.setText("Password not entered");
+            return;
+        }
+
+        if (str2.length()<8) {
+            password.setError("Password length <8");
             return;
         }
 
@@ -91,5 +103,9 @@ public class Login extends AppCompatActivity {
                 progressDialoglogin.dismiss();
             }
         });
+    }
+    private boolean checkUser(String target)
+    {
+        return (!TextUtils.isEmpty(target) && Patterns.EMAIL_ADDRESS.matcher(target).matches());
     }
 }
