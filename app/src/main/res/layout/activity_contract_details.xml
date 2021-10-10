@@ -2,9 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ContractDetails">
 
     <TextView
@@ -13,6 +15,8 @@
         android:layout_marginTop="30dp"
         android:textStyle="bold"
         android:textSize="35sp"
+        android:fontFamily="@font/patrick_hand"
+        android:textColor="#686868"
         android:layout_marginBottom="70dp"
         android:text="@string/contract_details"
         >
@@ -29,40 +33,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/vendor"
+            android:fontFamily="@font/andika"
+            android:textStyle="bold"
             android:textSize="15sp"
-            android:textColor="@color/black"
+            android:layout_marginBottom="1dp"
+            android:textColor="#434343"
             />
+
+
         <TextView
             android:id="@+id/contract_details_vendor"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/input_boxes"
-            android:paddingStart="11dp"
-            android:paddingLeft="11dp"
-            android:paddingEnd="0dp"
             android:layout_marginBottom="25dp"
-            android:paddingRight="0dp"
+            android:background="@drawable/input_boxes"
+            android:backgroundTint="#E4E4E4"
+            android:paddingLeft="25dp"
+            android:paddingTop="12dp"
             android:textColor="#000000" />
 
-
-
         <TextView
+            android:layout_marginBottom="1dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/category"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
             android:textSize="15sp"
-            android:textColor="@color/black"
+            android:textColor="#434343"
             />
         <TextView
             android:id="@+id/contract_details_category"
             android:layout_width="match_parent"
             android:layout_height="43dp"
             android:background="@drawable/input_boxes"
-            android:paddingStart="11dp"
-            android:paddingLeft="11dp"
-            android:paddingEnd="0dp"
+            android:paddingLeft="25dp"
+            android:backgroundTint="#E4E4E4"
+            android:paddingTop="12dp"
             android:layout_marginBottom="25dp"
-            android:paddingRight="0dp"
             android:textColor="#000000" />
 
 
@@ -72,37 +80,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/costs"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
             android:textSize="15sp"
-            android:textColor="@color/black"
+            android:textColor="#434343"
             />
+
         <TextView
             android:id="@+id/contract_details_costs"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:background="@drawable/input_boxes"
-            android:paddingStart="11dp"
-            android:paddingLeft="11dp"
-            android:paddingEnd="0dp"
             android:layout_marginBottom="25dp"
-            android:paddingRight="0dp"
-            android:textColor="#000000" />
+            android:background="@drawable/input_boxes"
+            android:paddingLeft="25dp"
+            android:backgroundTint="#E4E4E4"
+            android:paddingTop="12dp"
+            android:textColor="#000000"
+  />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ends_on"
+            android:layout_marginBottom="1dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
             android:textSize="15sp"
-            android:textColor="@color/black"
+            android:textColor="#434343"
             />
         <TextView
             android:id="@+id/contract_details_endson"
             android:layout_width="match_parent"
             android:layout_height="43dp"
+            android:paddingLeft="25dp"
+            android:backgroundTint="#E4E4E4"
+            android:paddingTop="12dp"
             android:background="@drawable/input_boxes"
-            android:paddingStart="11dp"
-            android:paddingLeft="11dp"
-            android:paddingEnd="0dp"
-            android:paddingRight="0dp"
             android:textColor="#000000" />
     </LinearLayout>
 
@@ -117,7 +131,8 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:backgroundTint="#15981A"
+            android:background="@drawable/new_button_design"
+            android:backgroundTint="#239f56"
             android:text="@string/edit"
             tools:ignore="ButtonStyle,UnusedAttribute"
             android:layout_marginEnd="20dp">
@@ -127,7 +142,8 @@
             android:id="@+id/contract_details_delete_button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#BC4823"
+            android:backgroundTint="#D84D23"
+            android:background="@drawable/new_button_design"
             android:text="@string/delete"
             tools:ignore="ButtonStyle,UnusedAttribute">
         </Button>
