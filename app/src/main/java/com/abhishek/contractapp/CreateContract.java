@@ -265,10 +265,7 @@ public class CreateContract extends AppCompatActivity {
             public void onClick(View v) {
                 String xcost = cost.getText().toString();
                 String xdate = end_date.getText().toString();
-                int costnum=0;
-                if(!xcost.isEmpty()) {
-                    costnum = Integer.parseInt(xcost);
-                }
+                double costnum=0;
 
                 if(vendorString.equals("Select a contract") && categoryString.equals("Select a category"))
                 {
@@ -287,13 +284,9 @@ public class CreateContract extends AppCompatActivity {
 
                 else if(xcost.isEmpty())
                 {
-                    cost.setError("cost field empty");
+                    cost.setError("cost field is empty");
                 }
 
-                else if(costnum<0)
-                {
-                    cost.setError("cost field empty");
-                }
 
                 else if(isDateAfter(newdate,curr))
                 {
@@ -333,7 +326,7 @@ public class CreateContract extends AppCompatActivity {
     {
         try
         {
-            String myFormatString = "yyyy-M-dd"; // for example
+            String myFormatString = "yyyy-MM-dd"; // for example
             SimpleDateFormat df = new SimpleDateFormat(myFormatString);
             Date date1 = df.parse(endDatex);
             Date startingDate = df.parse(startDate);

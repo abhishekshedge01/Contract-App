@@ -61,7 +61,7 @@ public class ContractList extends AppCompatActivity {
 
                 holder.vendor.setText(model.getVendor());
                 holder.category.setText(model.getCategory());
-                holder.cost.setText(model.getCost());
+                holder.cost.setText("$ "+model.getCost());
                 holder.date.setText(model.getDate());
 
                 String docId=noteAdapter.getSnapshots().getSnapshot(position).getId();

@@ -110,7 +110,7 @@
             android:id="@+id/edit_contract_costs"
             android:layout_width="match_parent"
             android:layout_height="43dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:backgroundTint="#E4E4E4"
             android:background="@drawable/grey_box"
             android:textSize="15sp"

@@ -352,7 +352,6 @@ public class EditContract extends AppCompatActivity {
             public void onClick(View v) {
                 String newCost=update_cost.getText().toString();
                 String newDate=update_date.getText().toString();
-                int costnum=Integer.parseInt(newCost);
 
                 if(editvendorString.equals("Select a contract") && editcategoryString.equals("Select a category"))
                 {
@@ -371,12 +370,7 @@ public class EditContract extends AppCompatActivity {
 
                 else if(newCost.isEmpty())
                 {
-                    update_cost.setError("cost field empty");
-                }
-
-                else if(costnum<0)
-                {
-                    update_cost.setError("cost field empty");
+                    update_cost.setError("cost field is empty");
                 }
 
                 else if(isDateAfter(newdate,curr))
