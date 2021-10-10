@@ -11,15 +11,16 @@
     <string name="my_contracts">My Contracts</string>
     <string name="add_contract">Add Contract</string>
     <string name="new_contract">New Contract</string>
-    <string name="vendor">Vendor</string>
-    <string name="category">Category</string>
-    <string name="costs">Costs</string>
-    <string name="ends_on">Ends on</string>
     <string name="_06_08_2001">06/08/2001</string>
     <string name="create">Create</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
     <string name="contract_details">Contract Details</string>
+    <string name="dummy">dummy</string>
+    <string name="vendor">Vendor</string>
+    <string name="category">Category</string>
+    <string name="costs">Costs</string>
+    <string name="ends_on">Ends On</string>
 
 
     <string-array name="vendor_name">
