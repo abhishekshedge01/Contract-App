@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".CreateContract">
@@ -15,105 +16,144 @@
         android:textStyle="bold"
         android:textSize="35sp"
         android:layout_marginBottom="70dp"
+        android:fontFamily="@font/patrick_hand"
+        android:textColor="#686868"
         android:text="@string/new_contract"
         >
     </TextView>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="30dp"
-    android:orientation="vertical"
-    >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/vendor"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        />
-
-
-    <Spinner
-        android:id="@+id/create_contract_vendor"
-        android:background="@drawable/grey_box"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:layout_marginBottom="25dp"></Spinner>
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/category"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        />
-    <Spinner
-        android:id="@+id/create_contract_category"
-        android:layout_width="match_parent"
-        android:background="@drawable/grey_box"
-        android:layout_height="43dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
         >
-    </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vendor"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_marginBottom="25dp"
+    android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/create_contract_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/grey_box"
+            android:backgroundTint="#EFEFEF">
+        </Spinner>
+            <ImageView
+                android:layout_gravity="right|center"
+                android:contentDescription="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                />
+</FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/create_contract_category"
+            android:layout_width="match_parent"
+            android:background="@drawable/grey_box"
+            android:layout_height="43dp"
+            android:backgroundTint="#EFEFEF"
+            >
+        </Spinner>
+
+        <ImageView
+            android:layout_gravity="right|center"
+            android:contentDescription="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+            />
+        </FrameLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/costs"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/costs"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:textColor="@color/black"
+            />
 
-    <EditText
-        android:id="@+id/create_contract_costs"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:inputType="number"
-        android:background="@drawable/grey_box"
-        android:paddingStart="11dp"
-        android:paddingLeft="11dp"
-        android:paddingEnd="0dp"
-        android:layout_marginBottom="25dp"
-        android:paddingRight="0dp"
-        android:textColor="#000000"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/create_contract_costs"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:inputType="number"
+            android:background="@drawable/grey_box"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="0dp"
+            android:textSize="15sp"
+            android:backgroundTint="#EFEFEF"
+            android:layout_marginBottom="25dp"
+            android:paddingRight="0dp"
+            android:textColor="#000000"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/ends_on"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ends_on"
+            android:textStyle="bold"
+            android:fontFamily="@font/andika"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
 
-    <TextView
-        android:id="@+id/create_contract_date"
-        android:layout_width="match_parent"
-        android:textSize="15sp"
-        android:text="@string/_06_08_2001"
-        android:padding="11dp"
-        android:layout_height="43dp"
-        android:paddingStart="20dp"
-        android:background="@drawable/grey_box"
-        android:paddingLeft="20dp"
-        android:paddingEnd="0dp"
-        android:paddingRight="0dp"
-        android:textColor="#000000"
-        android:layout_marginBottom="25dp">
-    </TextView>
+        <TextView
+            android:id="@+id/create_contract_date"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/grey_box"
+            android:backgroundTint="#EFEFEF"
+            android:padding="11dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:text="@string/_06_08_2001"
+            android:textColor="#000000"
+            android:textSize="15sp"></TextView>
 
-    <Button
-        android:text="@string/create"
-        android:id="@+id/create_contract_create_button"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:background="@drawable/button_design"
-        android:textSize="17sp"
-        android:textAllCaps="false"
-        app:backgroundTint="#FF9800" />
+        <Button
+            android:text="@string/create"
+            android:id="@+id/create_contract_create_button"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@drawable/button_design"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            app:backgroundTint="#FF9800" />
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
