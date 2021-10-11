@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_height="match_parent"
@@ -50,7 +49,9 @@
             android:backgroundTint="#E4E4E4"
             android:paddingLeft="25dp"
             android:paddingTop="12dp"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            tools:ignore="RtlSymmetry,UnusedAttribute"
+            android:paddingStart="25dp" />
 
         <TextView
             android:layout_marginBottom="1dp"
@@ -71,7 +72,9 @@
             android:backgroundTint="#E4E4E4"
             android:paddingTop="12dp"
             android:layout_marginBottom="25dp"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry,UnusedAttribute" />
 
 
 
@@ -97,7 +100,8 @@
             android:backgroundTint="#E4E4E4"
             android:paddingTop="12dp"
             android:textColor="#000000"
-  />
+            android:paddingStart="25dp"
+            tools:ignore="RtlSymmetry,UnusedAttribute" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -117,7 +121,9 @@
             android:backgroundTint="#E4E4E4"
             android:paddingTop="12dp"
             android:background="@drawable/input_boxes"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            tools:ignore="RtlSymmetry,UnusedAttribute"
+            android:paddingStart="25dp" />
     </LinearLayout>
 
     <LinearLayout

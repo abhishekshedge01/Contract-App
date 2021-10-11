@@ -21,6 +21,10 @@
     <string name="category">Category</string>
     <string name="costs">Costs</string>
     <string name="ends_on">Ends On</string>
+    <string name="dol">$</string>
+    <string name="add_contract_list">Add Contract</string>
+    <string name="edit_contract_string">Edit Contract</string>
+    <string name="update_string">Update</string>
 
 
     <string-array name="vendor_name">

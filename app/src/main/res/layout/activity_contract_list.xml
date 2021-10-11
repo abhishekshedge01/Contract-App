@@ -27,7 +27,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/new_button_design"
-        android:text="Add Contract"
+        android:text="@string/add_contract_list"
         android:textSize="12sp"
         app:backgroundTint="#1BA121"
         tools:ignore="UnusedAttribute">
@@ -38,5 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
-        android:scrollbars="vertical"></androidx.recyclerview.widget.RecyclerView>
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

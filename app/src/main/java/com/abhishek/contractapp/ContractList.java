@@ -26,7 +26,7 @@ import java.util.Date;
 
 
 public class ContractList extends AppCompatActivity {
-    Button fltact;
+    Button addcontract;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
     FirebaseFirestore firebaseFirestore;
@@ -37,12 +37,12 @@ public class ContractList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contract_list);
-        fltact = findViewById(R.id.contract_list_add_contract_button);
+        addcontract = findViewById(R.id.contract_list_add_contract_button);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        fltact.setOnClickListener(new View.OnClickListener() {
+        addcontract.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), CreateContract.class);
