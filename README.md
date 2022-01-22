@@ -22,13 +22,11 @@ To help users to have an overview about their contracts, by creating a small app
 
 - If a new User the user signup's with his credintials and recieves a verification mail on this given mail id.
 - He can also sign up with google-sign-in
-<br/>
 
 
 ### Login
 
 - A registered user enters his credentials and get redirected to the dashboard.
- <br/>
 
 
 
@@ -43,15 +41,12 @@ The list is sorted by the **Ends on** value (ascending).
 - Users can only access contracts that belongs to them.
 
 - If users click on the __Add contract__ button, then they are redirected to the “Add contract” page. 
-<br/>
-
 
 
 
 ### Add Contract Activity
 
 - Add the vending activity details.
-<br/>
 
 ### Details Contract Activity
 
@@ -59,7 +54,7 @@ The list is sorted by the **Ends on** value (ascending).
 - Here he has 2 options either to edit or delete the activity.
 - If clicks delete, he is shown a confirmation whether to delete. If yes, he is redirected to the dashboard where the Upcoming contracts page gets updated in sorted order.
 - If clicks edit he is redirected to the edit activity.
-<br/>
+
 
 ### Edit Contract Activity
 
