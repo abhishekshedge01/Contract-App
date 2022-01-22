@@ -17,19 +17,30 @@ To help users to have an overview about their contracts, by creating a small app
 
 
 
-**Sign Up**
+
+## Features
+
+- Account creation and sign into existing accounts
+
+- Contracts CRUD using Firestore
+
+## Project Structure
+
+
+
+### Sign Up
 
 - If a new User the user signup's with his credintials and recieves a verification mail on this given mail id.
 - He can also sign up with google-sign-in
 
 
-**Login**
+### Login
 
 - A registered user enters his credentials and get redirected to the dashboard.
 
 
 
-**Dashboard**
+### Dashboard
 
 The list is sorted by the **Ends on** value (ascending).
 
@@ -44,19 +55,19 @@ The list is sorted by the **Ends on** value (ascending).
 
 
 
-**Add Contract Activity**
+### Add Contract Activity
 
 - Add the vending activity details.
 
 
-**Details Contract Activity**
+### Details Contract Activity
 
 - The user can only view the vending activity in detail.
 - Here he has 2 options either to edit or delete the activity.
 - If clicks delete, he is shown a confirmation whether to delete. If yes, he is redirected to the dashboard where the Upcoming contracts page gets updated in sorted order.
 - If clicks edit he is redirected to the edit activity.
 
-**Edit Contract Activity**
+### Edit Contract Activity
 
 - Edit the vending details.
 - If changes are made, redirected to dashboard and upcoming contracts get updated with th edited one.
