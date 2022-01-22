@@ -6,5 +6,5 @@ To help users to have an overview about their contracts, by creating a small app
 
 · That application will support the following features:
 
-|checked| Account creation and sign into existing accounts
-|checked| Contracts CRUD
+<input type="checkbox" disabled checked /> works Account creation and sign into existing accounts
+<input type="checkbox" disabled checked /> works Contracts CRUD
