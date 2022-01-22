@@ -12,7 +12,7 @@ To help users to have an overview about their contracts, by creating a small app
 
 - Account creation and sign into existing accounts
 
-- Contracts CRUD using Firestore
+- Contracts __CRUD__ using Firestore
 <br/><br/>
 
 ## Project Structure
@@ -46,14 +46,14 @@ The list is sorted by the **Ends on** value (ascending).
 
 ### Add Contract Activity
 
-- Add the vending activity details.
+- Add the upcoming task details.
 
 ### Details Contract Activity
 
 - The user can only view the vending activity in detail.
-- Here he has 2 options either to edit or delete the activity.
-- If clicks delete, he is shown a confirmation whether to delete. If yes, he is redirected to the dashboard where the Upcoming contracts page gets updated in sorted order.
-- If clicks edit he is redirected to the edit activity.
+- Here he has 2 options either to edit or __delete__ the __activity__.
+- If clicks __delete__, he is shown a confirmation whether to delete. If yes, he is redirected to the dashboard where the Upcoming contracts page gets updated in sorted order.
+- If clicks __edit__ he is redirected to the edit activity.
 
 
 ### Edit Contract Activity
