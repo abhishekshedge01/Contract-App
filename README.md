@@ -19,19 +19,6 @@ To help users to have an overview about their contracts, by creating a small app
 ## Project Structure
 
 
-
-
-## Features
-
-- Account creation and sign into existing accounts
-
-- Contracts CRUD using Firestore
-<br/>
-
-## Project Structure
-
-
-
 ### Sign Up
 
 - If a new User the user signup's with his credintials and recieves a verification mail on this given mail id.
