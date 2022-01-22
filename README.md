@@ -6,5 +6,5 @@ To help users to have an overview about their contracts, by creating a small app
 
 · That application will support the following features:
 
-- [x] Account creation and sign into existing accounts
-- [x] Contracts CRUD
+|checked|unchecked|crossed| Account creation and sign into existing accounts
+|checked|unchecked|crossed| Contracts CRUD
