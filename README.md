@@ -7,13 +7,14 @@ Managing contracts is not an easy task, believe me, we know how that can be comp
 
 ## Objective:
 To help users to have an overview about their contracts, by creating a small application where users will be able to add contracts and manage them.
-
+<br/>
 
 ## Features
 
 - Account creation and sign into existing accounts
 
 - Contracts CRUD using Firestore
+<br/>
 
 ## Project Structure
 
@@ -25,6 +26,7 @@ To help users to have an overview about their contracts, by creating a small app
 - Account creation and sign into existing accounts
 
 - Contracts CRUD using Firestore
+<br/>
 
 ## Project Structure
 
