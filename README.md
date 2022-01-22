@@ -22,13 +22,13 @@ To help users to have an overview about their contracts, by creating a small app
 
 - If a new User the user signup's with his credintials and recieves a verification mail on this given mail id.
 - He can also sign up with google-sign-in
-- <br/>
+<br/>
 
 
 ### Login
 
 - A registered user enters his credentials and get redirected to the dashboard.
-- <br/>
+ <br/>
 
 
 
@@ -42,7 +42,8 @@ The list is sorted by the **Ends on** value (ascending).
 
 - Users can only access contracts that belongs to them.
 
-- If users click on the __Add contract__ button, then they are redirected to the “Add contract” page. <br/>
+- If users click on the __Add contract__ button, then they are redirected to the “Add contract” page. 
+<br/>
 
 
 
